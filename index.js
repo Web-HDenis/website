@@ -1,9 +1,8 @@
 // Liste der Benutzer und Passwörter
 const users = [
-  { username: 'ADMIN', password: 'ADMIN' },
-  { username: 'NorryFN', password: 'NorryFN' },
-  { username: 'DenisH', password: 'Stitch' },
-  
+  { username: 'admin', password: '1234' },
+  { username: 'user1', password: 'pass1' },
+  { username: 'user2', password: 'pass2' },
 ];
 
 document.getElementById('login-form').addEventListener('submit', function(event) {
@@ -17,6 +16,9 @@ document.getElementById('login-form').addEventListener('submit', function(event)
   const user = users.find(u => u.username === username && u.password === password);
 
   if (user) {
+    // Speichern des Benutzernamens im localStorage
+    localStorage.setItem('username', username);
+
     // Login erfolgreich - Weiterleitung zur Home-Seite
     window.location.href = 'home.html';
   } else {
