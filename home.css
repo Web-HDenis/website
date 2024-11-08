@@ -10,7 +10,7 @@
   text-transform: uppercase; /* Optional: Alle Buchstaben groß */
 }
 
-/* Grundlegendes Layout */
+/* Allgemeine Styles */
 * {
     margin: 0;
     padding: 0;
@@ -19,119 +19,51 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
     color: #333;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+/* Social Link Styles */
+.social-links {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    flex-direction: column;
+    gap: 15px;
 }
 
-header .logo h1 {
-    font-size: 24px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
+.social-link {
     text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
-
-/* Hero Section */
-.hero {
-    background-color: #0077cc;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.hero p {
     font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.hero button {
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #0077cc;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 12px 20px;
     border-radius: 5px;
-}
-
-.hero button:hover {
-    background-color: #005fa3;
     color: white;
+    transition: all 0.3s ease;
 }
 
-/* Services Section */
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    padding: 40px 20px;
-    background-color: #fff;
+.social-link:hover {
+    opacity: 0.8;
 }
 
-.services h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 28px;
+.social-link.youtube {
+    background-color: #ff0000;
 }
 
-.service-card {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.service-card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.service-card p {
-    font-size: 16px;
-    color: #555;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+.social-link.tiktok {
+    background-color: #000000;
 }
