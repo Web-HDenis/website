@@ -1,9 +1,9 @@
 // Liste der Benutzer und Passwörter
 const users = [
-  { username: 'admin', password: '1234' },
-  { username: 'user1', password: 'pass1' },
-  { username: 'user2', password: 'pass2' },
-  { username: 'u', password: '1234' },
+  { username: 'ADMIN', password: 'ADMIN' },
+  { username: 'NorryFN', password: 'NorryFN' },
+  { username: 'DenisH', password: 'Stitch' },
+  
 ];
 
 document.getElementById('login-form').addEventListener('submit', function(event) {
