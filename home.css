@@ -65,3 +65,7 @@ h1 {
 .social-link.tiktok {
     background-color: #000000;
 }
+
+.social-link.discord {
+    background-color: blue;
+}
