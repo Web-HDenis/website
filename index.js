@@ -3,6 +3,7 @@ const users = [
   { username: 'admin', password: '1234' },
   { username: 'user1', password: 'pass1' },
   { username: 'user2', password: 'pass2' },
+  { username: 'u', password: '1234' },
 ];
 
 document.getElementById('login-form').addEventListener('submit', function(event) {
